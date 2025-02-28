@@ -34,7 +34,7 @@ A **blog publishing site** where creators can write blogs, and an admin approves
 ## 🔧 Installation & Setup
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/your-repo/blog-app.git
+git clone [https://github.com/your-repo/blog-app.git](https://github.com/devprince116/blog-publishing)
 cd blog-app
 ```
 
@@ -46,7 +46,7 @@ yarn install  # or npm install
 ### **3️⃣ Set Up Environment Variables**
 Create a **.env.local** file in the Next.js project and add:
 ```sh
-NEXT_PUBLIC_STRAPI_URL=http://localhost:1337  # Update if hosted
+NEXT_PUBLIC_STRAPI_URL=http://localhost:1337/api 
 ```
 
 ### **4️⃣ Start the Development Server**
@@ -58,25 +58,7 @@ npm run develop
 
 #### **Run Next.js Frontend**
 ```sh
+cd frontend
 yarn dev  # or npm run dev
 ```
-
-Now visit **http://localhost:3000** to see the app in action!
-
-## 📌 API Endpoints
-| Method | Endpoint          | Description               |
-|--------|------------------|---------------------------|
-| GET    | `/blogs`         | Fetch all approved blogs  |
-| POST   | `/blogs`         | Create a new blog (admin approval required) |
-| PATCH  | `/blogs/:id`     | Edit an existing blog (creates a new version) |
-| GET    | `/comments`      | Fetch all approved comments |
-| POST   | `/comments`      | Add a comment (admin approval required) |
-
-## 🔥 Future Enhancements
-- **User Authentication**: Enable login/signup for registered users.
-- **Categories & Tags**: Allow filtering blogs by category and tags.
-- **Real-time Notifications**: Notify users when their comment is approved.
-
----
-📢 **Contributions & Feedback:** Feel free to contribute or report issues in the repository!
 
